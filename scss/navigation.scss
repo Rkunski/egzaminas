@@ -1,0 +1,18 @@
+.navigation{
+  height: 72px;
+  width: 100%;
+  background: black;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  .logo{
+    height: 60px;
+    width: 120px;
+    background: url('svg/logo-nav.svg');
+    background-repeat: no-repeat;
+  }
+  a{
+    padding: 10px;
+    text-decoration: none;
+  }
+}
