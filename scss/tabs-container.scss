@@ -25,7 +25,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }
+
 .tabs-container{
   display: flex;
   justify-content: center;
@@ -133,6 +135,6 @@ button span {
     }
 }
 .tab{
-transform: scale(0.8);
+transform: scale(0.9);
 }
 }
