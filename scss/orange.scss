@@ -1,0 +1,98 @@
+.orange-bg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #E27866;
+  height: 580px;
+}
+.login{
+  background: white;
+  width: 390px;
+  height:320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 65px 33px;
+  border-radius: 5px;
+}
+input{
+  border: none;
+  border-bottom: 1px solid grey;
+  padding: 8px;
+  width: 80%;
+  font-size: 15px;
+}
+.buttons{
+  display: flex;
+  padding: 5px;
+}
+
+/* The container */
+.containerx {
+  display: flex;
+  position: relative;
+  padding: 15px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 10px;
+
+}
+
+/* Hide the browser's default radio button */
+.containerx input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: -2.5px;
+  left:-20px;
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border: 1px solid #41D395;
+  border-radius: 50%;
+  margin:15px;
+}
+
+
+.containerx:hover input ~ .checkmark {
+  background-color: white;
+  border:2px solid #41D395;
+
+}
+
+
+.containerx input:checked ~ .checkmark {
+  background-color: white;
+  border:2px solid #41D395;
+
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containerx input:checked ~ .checkmark:after {
+  display: flex;
+}
+
+/* Style the indicator (dot/circle) */
+.containerx .checkmark:after {
+ 	top: 3.5px;
+	left: 3.4px;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background: #41D395;
+
+}
