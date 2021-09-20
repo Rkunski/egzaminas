@@ -1,4 +1,5 @@
 @import "refresh";
+@import "body";
 @import "navigation";
 @import "town";
 @import"social";
@@ -9,8 +10,3 @@
 @import "chat-swiper";
 @import "orange";
 @import "footer";
-body{
-  background: black;
-  font-family: Montserrat;
-  // height: 100vh;
-}
