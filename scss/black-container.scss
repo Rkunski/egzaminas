@@ -9,15 +9,12 @@
   height:640px;
 
 .black-logo{
-  height: 200px;
   width: 100%;
-  max-width: 470px;
-  background: url('svg/black-logo.svg');
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-position:center;
-  margin: 0 auto;
-
+  height: 100%;
+  top:20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 }
 .black-container{
@@ -49,14 +46,34 @@
   flex-direction: column;
   justify-content: flex-end;
   padding: 50px;
+  hr{
+    border:1px solid #E27866;
+    margin: 10px;
+  }
 }
 
 .eye{
   width: 50px;
   height: 50px;
   border-radius: 100px;
-  background: red;
+  background: #E27866;
+  margin: 10px;
+  svg{
+    transform: scale(0.6);
+  }
 }
 .chat{
   display: flex;
+}
+.info{
+  width: 400px;
+}
+@media (max-width:1030px) {
+  .black-content{
+    flex-direction: column;
+    hr{
+      width: 100px;
+
+    }
+  }
 }

@@ -3,9 +3,9 @@
   flex-direction: column;
   justify-content: center;
   color: white;
-  width: 80%;
-  margin: 0 auto;
+  width: 40%;
   height:640px;
+
   .logo{
     height: 120px;
     width: 250px;
@@ -48,4 +48,146 @@
     z-index: -1;
     opacity: 0.5;
 }
+}
+.town-content{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.loginx{
+  background: white;
+  width: 390px;
+  height:430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 5px;
+  h2{
+    padding: 13px;
+    width: 100%;
+    text-align: center;
+    background: #F5F5F5;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  span{
+    color: #E27866;
+  }
+  h3{
+    padding: 20px;
+    width: 100%;
+    padding-left: 46px;
+  }
+  input{
+    border: none;
+    border-bottom: 1px solid grey;
+    padding: 15px;
+    width: 80%;
+    font-size: 15px;
+  }
+}
+
+.buttonsx{
+  display: flex;
+  padding: 5px;
+  align-items: flex-start;
+  width: 100%;
+  margin-left: 100px;
+}
+
+/* The container */
+.containerx {
+  display: flex;
+  position: relative;
+  padding: 15px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 10px;
+
+}
+
+/* Hide the browser's default radio button */
+.containerx input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: -2.5px;
+  left:-20px;
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border: 1px solid #41D395;
+  border-radius: 50%;
+  margin:15px;
+}
+
+
+.containerx:hover input ~ .checkmark {
+  background-color: white;
+  border:2px solid #41D395;
+
+}
+
+
+.containerx input:checked ~ .checkmark {
+  background-color: white;
+  border:2px solid #41D395;
+
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containerx input:checked ~ .checkmark:after {
+  display: flex;
+  font-weight: bold;
+}
+
+/* Style the indicator (dot/circle) */
+.containerx .checkmark:after {
+ 	top: 3.5px;
+	left: 3.4px;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background: #41D395;
+}
+.loginx button{
+  width: 100%;
+  color: white;
+  padding: 15px;
+  font-size: 22px;
+  background: #41D395;
+  cursor: pointer;
+  border-radius: 5px;
+  border:none;
+
+}
+
+@media (max-width:800px) {
+  .town-content{
+    flex-direction: column;
+    height: 1000px;
+  }
+  .bg-town{
+    height: 1200px;
+    &:before{
+      height: 1200px;
+      background-repeat: repeat;
+    }
+  }
+
 }

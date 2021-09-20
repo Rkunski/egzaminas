@@ -24,6 +24,18 @@ input{
   width: 80%;
   font-size: 15px;
 }
+.orange-header{
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2.5;
+  padding: 15px;
+  font-size: 18px;
+}
+
+
 .buttons{
   display: flex;
   padding: 5px;
@@ -84,6 +96,7 @@ input{
 /* Show the indicator (dot/circle) when checked */
 .containerx input:checked ~ .checkmark:after {
   display: flex;
+  font-weight: bold;
 }
 
 /* Style the indicator (dot/circle) */
@@ -94,5 +107,15 @@ input{
 	height: 4px;
 	border-radius: 50%;
 	background: #41D395;
-
+}
+.login button{
+  padding: 15px 35px;
+  color: white;
+  background: #41D395;
+  cursor: pointer;
+  border-radius: 5px;
+  border:none;
+  &:hover{
+    transform: scale(1.2);
+  }
 }

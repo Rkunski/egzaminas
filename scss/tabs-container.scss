@@ -118,6 +118,18 @@ button span {
     transform: rotate(-45deg);
     opacity: 0.6;
 }
-.clear {
-clear:both;
+@media (max-width:1030px){
+  .container{
+    flex-direction: column;
+  }
+  .tabs{
+    flex-direction: row;
+  }
+  .tabs-container{
+    height: 1200px;
+    &:before{
+      height: 1200px;
+      background-repeat: repeat;
+    }
+}
 }

@@ -1,31 +1,34 @@
-.social{
-  background: white;
-  height: 100px;
-  .sc-content{
+.footer{
+  height: 90px;
+  width: 100%;
+  background: black;
+  .footer-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
     height: 100px;
     margin: 0 auto;
+    color: grey;
     .icons{
       list-style: none;
       display: flex;
       width: 500px;
       justify-content: space-between;
       align-items: center;
+    }
   }
 }
-}
-@media(max-width:880px) {
-  .sc-content{
+@media (max-width:880px) {
+  .footer-content{
     flex-direction: column;
-    line-height: 1.5;
+    padding: 40px;
   }
-.social{
-  height: 150px;
-}
-.sc-text{
-  padding: 5px;
-}
+  .footer{
+    height:150px;
+  }
+  p{
+    padding: 15px;
+  }
+
 }
